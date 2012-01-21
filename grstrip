@@ -1,0 +1,11 @@
+#! /usr/local/bin/bash
+
+CMD="/opt/heirloom/5bin/sed -f subst.sed"
+
+if [ $# -gt 0 ]
+then
+    $CMD $1
+else
+    $CMD
+fi
+    
